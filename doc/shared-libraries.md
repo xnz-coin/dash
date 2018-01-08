@@ -15,7 +15,7 @@ The interface is defined in the C header `dashconsensus.h` located in  `src/scri
 
 #### Script Validation
 
-`dashconsensus_verify_script` returns an `int` with the status of the verification. It will be `1` if the input script correctly spends the previous output `scriptPubKey`.
+`xnzconsensus_verify_script` returns an `int` with the status of the verification. It will be `1` if the input script correctly spends the previous output `scriptPubKey`.
 
 ##### Parameters
 - `const unsigned char *scriptPubKey` - The previous output script that encumbers spending.
@@ -32,7 +32,7 @@ The interface is defined in the C header `dashconsensus.h` located in  `src/scri
 - `dashconsensus_SCRIPT_FLAGS_VERIFY_DERSIG` - Enforce strict DER ([BIP66](https://github.com/bitcoin/bips/blob/master/bip-0066.mediawiki)) compliance
 
 ##### Errors
-- `dashconsensus_ERR_OK` - No errors with input parameters *(see the return value of `dashconsensus_verify_script` for the verification status)*
+- `dashconsensus_ERR_OK` - No errors with input parameters *(see the return value of `xnzconsensus_verify_script` for the verification status)*
 - `dashconsensus_ERR_TX_INDEX` - An invalid index for `txTo`
 - `dashconsensus_ERR_TX_SIZE_MISMATCH` - `txToLen` did not match with the size of `txTo`
 - `dashconsensus_ERR_DESERIALIZE` - An error deserializing `txTo`
