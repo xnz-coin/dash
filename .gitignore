@@ -6,13 +6,13 @@ reset-files.bash
 *.tar.gz
 
 *.exe
-src/dash
 src/xnz
-src/dash-cli
-src/dash-tx
-src/test/test_dash
-src/qt/test/test_dash-qt
-src/bench/bench_dash
+src/xnz
+src/xnz-cli
+src/xnz-tx
+src/test/test_xnz
+src/qt/test/test_xnz-qt
+src/bench/bench_xnz
 
 # autoreconf
 Makefile.in
@@ -62,7 +62,7 @@ libconftest.dylib*
 *.o
 *.o-*
 *.patch
-.dash
+.xnz
 *.a
 *.pb.cc
 *.pb.h
@@ -81,12 +81,12 @@ libconftest.dylib*
 # Compilation and Qt preprocessor part
 *.qm
 Makefile
-dash-qt
-Dash-Qt.app
+xnz-qt
+Xnz-Qt.app
 
 # Unit-tests
 Makefile.test
-dash-qt_test
+xnz-qt_test
 src/test/buildenv.py
 
 # Resources cpp
@@ -100,7 +100,7 @@ build
 *.gcno
 *.gcda
 /*.info
-test_dash.coverage/
+test_xnz.coverage/
 total.coverage/
 coverage_percent.txt
 
@@ -123,12 +123,12 @@ share/BitcoindComparisonTool.jar
 .autotools
 /doc/doxygen/
 
-libdashconsensus.pc
-src/qt/dash-qt.bash
+libxnzconsensus.pc
+src/qt/xnz-qt.bash
 qa/pull-tester/tests-config.sh
 
 #development symlinks
-dash-cli
+xnz-cli
 xnz
-dash-qt
+xnz-qt
 make
