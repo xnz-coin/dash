@@ -13,6 +13,8 @@ src/xnz-tx
 src/test/test_xnz
 src/qt/test/test_xnz-qt
 src/bench/bench_xnz
+src/qt/xnz-qt.exe
+
 
 # autoreconf
 Makefile.in
